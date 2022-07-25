@@ -1,0 +1,313 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color:#FFFDF1;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+}
+
+nav li{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: inline-block;
+  padding: 10px 10px;
+  margin: 10px auto;
+  color:#323132;
+  width: 150px;
+}
+
+main {
+  position: relative;
+  top: 150px;
+  float: center;
+  margin: 5px auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: xx-large;
+  color: #323132;
+}
+
+h2 {
+  font-size:large;
+  color: #323132;
+}
+
+.main-image{
+  display: center;
+  width: 20%;
+  height: 20%;
+  border-top-left-radius: 57%;
+  border-end-end-radius: 50%;
+}
+
+/* My Style Guide 
+.logo {
+  height: 350px;
+  background: url("/Images/My_Style.png") center;
+  background-position: 67%;
+}
+/* Accordion Nav */
+.accordions {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.accordion {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+.acc-label {
+  color: seashell;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  background-color: goldenrod;
+  font-weight: 900;
+  cursor: pointer;
+  font-size: x-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.accordion {
+  border-bottom: 1px solid;
+}
+
+.acc-label:hover {
+  color: #2c3e50;
+  background-color: bisque;
+  transition: all 0.4s ease;
+} 
+
+.acc-label::after {
+  color: seashell;
+  content: ">";
+  width: 2em;
+  height: 1em;
+  text-align: center;
+}
+
+.acc-label:hover::after {
+  color: #2c3e50;
+  content: ">";
+  width: 2em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.4s ease;
+} 
+
+.acc-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background-color: lemonchiffon;
+  transition: all 0.4s ease;
+}
+
+.image {
+  height: 100em;
+  background: url("/Images/Typography.png")top;
+  background-size: 82%;
+  background-repeat: no-repeat;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+input:checked + .acc-label::after {
+  transform: rotate(90deg);
+}
+
+input:checked ~ .acc-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+/*Navigation System */
+
+.nav {
+  display: flex;
+  background-color: black;
+  padding: 20px;
+}
+
+.left, .center, .right {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.center {
+  width: 50%;
+}
+
+.center a {
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: Arial;
+}
+
+.button {
+  color: black;
+  font-size: 16px;
+  padding: 15px;
+  width: 50%;
+}
+
+.right button {
+  background-color: yellow;
+}
+
+.left button {
+  background-color: skyblue;
+}
+/* Column styles */
+.column {
+  display: flex;
+  height: 1000px;
+  width: 800px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.meal1, .meal2, .meal3 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+} 
+ /*
+.image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.meal1 {
+  margin-top: 20px;
+  background-image: url("/images/Frame_138.png");
+}
+
+.meal2 {
+  background-image: url("/images/Frame_138.png");
+}
+
+.meal3 {
+  background-image: url("/images/Moishe&I.jpg");
+}
+
+.text {
+  background: #F0EAD6;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.text p {
+  color: #9D96A8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+Homework18 */
+.flexContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+  align-items: center;
+}
+
+img, h3, p {
+  width: 33%;
+}
+
+.workGrid {
+  display: grid;
+}
+
+
+
+
+
+/* Footer Styles */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #9D96A8;
+}
+
+.footer a {
+  padding: 30px;
+}
+
+.fb {
+  color:#3b5998;
+  font-family: Arial, Helvetica,  sans-serif; 
+  font-weight: 900;
+}
+
+.tw {
+  color: #00acee;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+
+.ig {
+  color: #ff0000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+
+.grid {
+  margin: 5rem auto;
+  width: min(90%, 75rem);
+  display: grid;
+  grid-template-columns: 10% 30% 60%;
+  background-color: #aaba9d;
+  gap: 1em;
+  grid-template-areas: 
+  "Skill1"
+  "Skill2"
+  "Skill3"
+  "Skill4"
+  "Skill5"
+  "Skill6"
+  "Skill7"
+  "Skill8"
+  "Skill9"
+  "Skill10"
+}
+
+
+
+@media only screen and (max-width: 600) {
+  .grid {
+    grid-auto-flow: row;
+  }
+}
